@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameColor="@android:color/white"
+        app:frameCornersSize="50dp"
+        app:frameCornersRadius="0dp"
+        app:frameAspectRatioWidth="1"
+        app:frameAspectRatioHeight="1"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:maskColor="#77000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:text="@string/scan"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/menu_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cnb_menuResource="@menu/menu"
+        app:cnb_orientationMode="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
